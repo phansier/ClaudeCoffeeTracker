@@ -33,6 +33,9 @@ import com.github.mikephil.charting.charts.BarChart
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
+import com.example.coffeetracker.domain.DailyStats
+import com.example.coffeetracker.domain.TrackerTab
+import com.example.coffeetracker.domain.WeeklyStats
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
