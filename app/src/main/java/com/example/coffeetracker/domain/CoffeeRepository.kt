@@ -1,5 +1,7 @@
 package com.example.coffeetracker.domain
 
+import kotlinx.coroutines.flow.Flow
+
 interface CoffeeRepository {
     fun getTodayCoffees(): Flow<List<Coffee>>
     fun getWeekCoffees(): Flow<List<Coffee>>

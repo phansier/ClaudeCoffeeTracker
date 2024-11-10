@@ -1,5 +1,18 @@
 package com.example.coffeetracker.ui
 
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.coffeetracker.domain.Coffee
+import com.example.coffeetracker.domain.CoffeeRepository
+import com.example.coffeetracker.domain.CoffeeSize
+import com.example.coffeetracker.domain.CoffeeType
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
 @HiltViewModel
 class CoffeeTrackerViewModel @Inject constructor(
     private val repository: CoffeeRepository
