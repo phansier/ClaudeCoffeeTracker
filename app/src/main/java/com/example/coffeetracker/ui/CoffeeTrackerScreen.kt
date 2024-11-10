@@ -36,6 +36,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import com.example.coffeetracker.domain.DailyStats
 import com.example.coffeetracker.domain.TrackerTab
 import com.example.coffeetracker.domain.WeeklyStats
+import com.example.coffeetracker.domain.updateChartData
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

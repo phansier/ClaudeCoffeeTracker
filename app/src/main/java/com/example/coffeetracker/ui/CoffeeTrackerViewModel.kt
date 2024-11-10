@@ -7,6 +7,8 @@ import com.example.coffeetracker.domain.CoffeeRepository
 import com.example.coffeetracker.domain.CoffeeSize
 import com.example.coffeetracker.domain.CoffeeTrackerUiState
 import com.example.coffeetracker.domain.CoffeeType
+import com.example.coffeetracker.domain.calculateDailyStats
+import com.example.coffeetracker.domain.calculateWeeklyStats
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

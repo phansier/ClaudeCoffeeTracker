@@ -6,6 +6,9 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.material.icons.outlined.Menu
+import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -39,17 +42,20 @@ fun DailyStatsCard(stats: DailyStats) {
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 StatItem(
-                    icon = Icons.Outlined.Coffee,
+//                    icon = Icons.Outlined.Coffee,
+                    icon = Icons.Outlined.AccountCircle,
                     value = stats.totalCups.toString(),
                     label = "Cups"
                 )
                 StatItem(
-                    icon = Icons.Outlined.WaterDrop,
+//                    icon = Icons.Outlined.WaterDrop,
+                    icon = Icons.Outlined.MoreVert,
                     value = "${stats.totalVolume}ml",
                     label = "Volume"
                 )
                 StatItem(
-                    icon = Icons.Outlined.BoltCircle,
+//                    icon = Icons.Outlined.BoltCircle,
+                    icon = Icons.Outlined.Menu,
                     value = "${stats.totalCaffeine}mg",
                     label = "Caffeine"
                 )
