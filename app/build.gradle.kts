@@ -5,11 +5,12 @@ plugins {
 
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("androidx.room")
 }
 
 android {
     namespace = "com.example.coffeetracker"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.coffeetracker"
@@ -73,4 +74,9 @@ dependencies {
     implementation("com.github.PhilJay:MPAndroidChart:3.1.0")
     kapt("androidx.room:room-compiler:2.6.1")
     kapt("com.google.dagger:hilt-android-compiler:2.50")
+}
+
+
+room {
+    schemaDirectory("$projectDir/schemas")
 }
